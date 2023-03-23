@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.2px;
+  text-transform: capitalize;
+}
+
+.labelErrorContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.errorMessage {
+  color: var(--error-red);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.input {
+  border: 1px solid #cfcfcf;
+  padding: 18px 0px 18px 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  transition: all 0.2s ease-in-out;
+}
+
+.input:focus {
+  outline: none;
+  border: 1px solid var(--primary-color);
+}
+
+.inputError {
+  border: 2px solid var(--error-red);
+}
