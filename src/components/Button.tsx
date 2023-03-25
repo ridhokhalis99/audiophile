@@ -5,9 +5,11 @@ import arrowIcon from "@/assets/icons/arrow.svg";
 const Button = ({
   children,
   type = "filled",
+  style,
 }: {
   children: string;
   type?: "filled" | "outline" | "borderless";
+  style?: React.CSSProperties;
 }) => {
   const isBorderless = type === "borderless";
   const typeClassNameDecider = () => {
@@ -24,7 +26,7 @@ const Button = ({
   const typeClassName = typeClassNameDecider();
 
   return (
-    <button className={`${styles.button} ${typeClassName}`}>
+    <button className={`${styles.button} ${typeClassName}`} style={style}>
       {children}
       {isBorderless && (
         <Image
