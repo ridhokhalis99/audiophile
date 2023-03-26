@@ -1,6 +1,6 @@
 import Image from "next/image";
-import logoImage from "../assets/images/logo.png";
-import cartIcon from "../assets/icons/cart.svg";
+import logoImage from "../assets/shared/desktop/logo.svg";
+import cartIcon from "../assets/shared/desktop/icon-cart.svg";
 import Link from "next/link";
 
 const navLinks = [

@@ -1,6 +1,6 @@
 import styles from "@/styles/Button.module.scss";
 import Image from "next/image";
-import arrowIcon from "@/assets/icons/arrow.svg";
+import arrowIcon from "@/assets/shared/desktop/icon-arrow-right.svg";
 
 const Button = ({
   children,

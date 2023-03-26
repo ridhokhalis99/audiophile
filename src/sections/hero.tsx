@@ -1,4 +1,4 @@
-import heroImage from "../assets/images/hero.png";
+import heroImage from "@/assets/home/desktop/image-hero.jpg";
 import Image from "next/image";
 import Button from "@/components/button";
 
@@ -6,7 +6,8 @@ const Hero = () => {
   const heroStyle = {
     height: "100vh",
     width: "100%",
-    backgroundColor: "#141414",
+    backgroundColor: "#191919",
+    position: "relative",
   };
 
   const containerStyle = {
@@ -49,13 +50,15 @@ const Hero = () => {
 
   const imageStyle = {
     position: "absolute",
-    right: "0",
-    height: "60%",
+    height: "100%",
+    maxWidth: "100%",
+    objectFit: "scale-down",
     width: "auto",
   };
 
   return (
     <section style={heroStyle}>
+      <Image src={heroImage} style={imageStyle} alt="hero" />
       <div style={containerStyle}>
         <div style={leftInnerContainerStyle}>
           <h2 className="overline" style={overlineStyle}>
@@ -68,7 +71,6 @@ const Hero = () => {
           </p>
           <Button style={buttonStyle}>See Product</Button>
         </div>
-        <Image src={heroImage} style={imageStyle} alt="hero" />
       </div>
     </section>
   );
